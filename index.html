@@ -21,16 +21,23 @@
   <body>
     <header>
       
-      <img src="images/logo/reservia@3x.png" alt="Reservia Logo" title="Reservia">
-
+      
       <nav>
      
-        <ul class="nav">
-          <li><a href="#accommodations">Accommodations</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#"><strong>Sign Up</strong></a></li>
-        </ul>
-  
+        <!-- <div class=head> -->
+
+          <ul class="headr">
+            <li>
+              <a class="logo-position" href="#">
+                <img class="logo" src="images/logo/reservia@3x.png" alt="Reservia Logo" title="Reservia">
+              </a>
+            </li>
+            <li><a class="accom-link" href="#accommodations">Accommodations</a></li>
+            <li><a class="activ-link" href="#activities">Activities</a></li>
+            <li><a class="signup-link" href="#"><strong>Sign Up</strong></a></li>
+          </ul>
+        <!-- </div> -->
+    
       </nav>
 
       <h1>Find a place for your dream vacation</h1>
@@ -39,37 +46,46 @@
       <Section>
 
         <!--place search box here with icon and text. Text to be changable-->
-        <i class="fas fa-map-marker-alt"></i>
+        <div class="searchbox">
+          <i class="fas fa-map-marker-alt marker"></i>
+          <input class="input" type="text" placeholder="Marseille, France">
+          <button class="button" type="Search">Search</button>
+        </div>
 
       </Section>
 
       <section>
 
-        <!--place Filters here with incons / text / mouse-over effects-->
+        <!--Filters with mouse-over effects-->
       
-        <a href="" onclick="return false;" >
+        <span class="filtertext"><strong>Filters</strong></span>
+
+        <button class="capsules">
+
+          <i class="fas fa-money-bill-wave fa-2x  icon icon-circle"></i>
+          <span><strong>Low Cost</strong></span>
+         
+        </button>
+      
+        <button class="capsules">
           
-          <i class="fas fa-money-bill-wave"></i>
+          <i class="fas fa-child fa-2x icon icon-circle"></i>
+          <span><strong>Family-friendly</strong></span>
+          
+        </button>
 
-        </a>
-      
-        <a href="" onclick="return false;">
-        
-          <i class="fas fa-child"></i>
-      
-        </a>
+        <button class="capsules">
+          
+          <i class="fas fa-heart fa-2x icon icon-circle"></i>
+          <span><strong>Romantic</strong></span>
+          
+        </button>
 
-        <a href="" onclick="return false;">
-        
-          <i class="fas fa-heart"></i>
-      
-        </a>
-
-        <a href="" onclick="return false;">
-        
-          <i class="fas fa-dog"></i>
-
-        </a>
+        <button class="capsules">
+          <i class="fas fa-dog fa-2x icon icon-circle"></i>
+          <span><strong>Pets allowed</strong></span>
+          
+        </button>
 
       </section>
 
@@ -79,7 +95,7 @@
   
     <main>
 
-      <div class="display-wrapper-acommodations-popular">
+      <div class="display-wrapper-accommodations-popular">
 
         <section class="accommodations" id="accommodations">
   
@@ -170,16 +186,18 @@
   
         </section>
   
-        <section class="Popular">
+        <section class="popular">
   
-          <h2 class="most">Most Popular</h2>
-          <i class="fas fa-chart-line"></i>
-  
+          <div class="most">
+            <h2>Most Popular</h2>
+            <i class="fas fa-chart-line fa-2x"></i>
+          </div>
+
           <div class="display-wrapper-pop">
           
-            <section class="Popular-card">
+            <section class="popular-card">
               <a href="" onclick="return false;">
-                <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel" title="Morning Sun Hotel">
+                <img class="pic" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel" title="Morning Sun Hotel">
                 <h3>Morning Sun Hotel</h3>
                 <p>Night starting at <strong>128€</strong></p>
                 <i class="fas fa-star"></i>
@@ -190,9 +208,9 @@
               </a>
             </section>
           
-            <section class="Popular-card">
+            <section class="popular-card">
               <a href="" onclick="return false;">
-                <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Bed and Breakfast" title="Au cœur de l'eau Bed and Breakfast">
+                <img class="pic" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Bed and Breakfast" title="Au cœur de l'eau Bed and Breakfast">
                 <h3>Au cœur de l'eau Bed and Breakfast</h3>
                 <p>Night starting at <strong>71€</strong></p>
                 <i class="fas fa-star"></i>
@@ -203,9 +221,9 @@
               </a>
             </section>
           
-            <section class="Popular-card">
+            <section class="popular-card">
               <a href="" onclick="return false;">
-                <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout blue et Blanc Hotel" title="Tout blue et Blanc Hotel">
+                <img class="pic" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout blue et Blanc Hotel" title="Tout blue et Blanc Hotel">
                 <h3>Tout blue et Blanc Hotel</h3>
                 <p>Night starting at <strong>68€</strong></p>
                 <i class="fas fa-star"></i>
@@ -286,9 +304,9 @@
           <li><a href="" onclick="return false;">Data and Privacy</a></li>
         </ul>
 
-        <h3>Our Accommodations</h3>
+        <!-- <h3>Our Accommodations</h3> -->
         <ul class="foot">
-          <!-- <li><strong>Accommodations</strong></li> -->
+          <li><strong>Accommodations</strong></li>
           <li><a href="" onclick="return false;">Quality Assessment</a></li>
           <li><a href="" onclick="return false;">You have a hotel?</a></li>
         </ul>
