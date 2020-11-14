@@ -27,14 +27,14 @@
         <!-- <div class=head> -->
 
           <ul class="headr">
-            <li>
-              <a class="logo-position" href="#">
+            <li class="logo-position">
+              <a href="#">
                 <img class="logo" src="images/logo/reservia@3x.png" alt="Reservia Logo" title="Reservia">
               </a>
             </li>
-            <li><a class="accom-link" href="#accommodations">Accommodations</a></li>
-            <li><a class="activ-link" href="#activities">Activities</a></li>
-            <li><a class="signup-link" href="#"><strong>Sign Up</strong></a></li>
+            <li class="accom"><a href="#accommodations">Accommodations</a></li>
+            <li class="activ"><a href="#activities">Activities</a></li>
+            <li class="signup"><a href="#"><strong>Sign Up</strong></a></li>
           </ul>
         <!-- </div> -->
     
@@ -44,8 +44,7 @@
       <p>Downtown or in nature</p>
       
       <Section>
-
-        <!--place search box here with icon and text. Text to be changable-->
+        <!--place search box here with icon and changable text.-->
         <div class="searchbox">
           <i class="fas fa-map-marker-alt marker"></i>
           <input class="input" type="text" placeholder="Marseille, France">
@@ -55,7 +54,6 @@
       </Section>
 
       <section>
-
         <!--Filters with mouse-over effects-->
       
         <span class="filtertext"><strong>Filters</strong></span>
@@ -182,7 +180,8 @@
             </section>
           </div>
   
-          <p><a href="" onclick="return false;">Show More</a></p>
+          <p><a href="" onclick="return false;"><strong>Show More</strong></a></p>
+            
   
         </section>
   
@@ -240,53 +239,61 @@
       
       </div>
 
-      <section class ="activities" id="activities">
+      <section class="activities" id="activities">
 
         <h2>Activities in Marseille</h2>
 
-        <div class="display-wrapper-act"></div>
+        <div class="display-wrapper-act">
           
-          <section class="Activities-card">
+          <section class="activities-card">
             <a href="" onclick="return false;">
               <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port" title="Old Port">
               <h3>Old Port</h3>
             </a>
           </section>
 
-          <section class="Activities-card">
-            <a href="" onclick="return false;">
-              <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues Fort" title="Pomègues Fort">
-              <h3>Pomègues Fort</h3>
-            </a>
-          </section>
+          <div class="display-wrapper-act-col2">
 
-          <section class="Activities-card">
-            <a href="" onclick="return false;">
-              <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island" title="Frioul Island">
-              <h3>Frioul Island</h3>
-            </a>
-          </section>
+            <section class="activities-card-col2-1">
+              <a href="" onclick="return false;">
+                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues Fort" title="Pomègues Fort">
+                <h3>Pomègues Fort</h3>
+              </a>
+            </section>
+  
+            <section class="activities-card-col2-2">
+              <a href="" onclick="return false;">
+                <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island" title="Frioul Island">
+                <h3>Frioul Island</h3>
+              </a>
+            </section>
 
-          <section class="Activities-card">
+          </div>
+
+          <section class="activities-card">
             <a href="" onclick="return false;">
               <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" title="Calanques National Park">
               <h3>Calanques National Park</h3>
             </a>
           </section>
 
-          <section class="Activities-card">
-            <a href="" onclick="return false;">
-              <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
-              <h3>Notre-Dame-de-la-Garde</h3>
-            </a>
-          </section>
+          <div class="display-wrapper-act-col4">
 
-          <section class="Activities-card">
-            <a href="" onclick="return false;">
-              <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park" title="Longchamp Park">
-              <h3>Longchamp Park</h3>
-            </a>
-          </section>
+            <section class="activities-card-col4-1">
+              <a href="" onclick="return false;">
+                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
+                <h3>Notre-Dame-de-la-Garde</h3>
+              </a>
+            </section>
+
+            <section class="activities-card-col4-2">
+              <a href="" onclick="return false;">
+                <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park" title="Longchamp Park">
+                <h3>Longchamp Park</h3>
+              </a>
+            </section>
+
+          </div>
 
         </div>
 
@@ -296,7 +303,6 @@
 
     <footer class="footer">
 
-        <!-- <h3>About</h3> -->
         <ul class="foot">
           <li><strong>About</strong></li>
           <li><a href="" onclick="return false;">Site Map</a></li>
@@ -304,14 +310,12 @@
           <li><a href="" onclick="return false;">Data and Privacy</a></li>
         </ul>
 
-        <!-- <h3>Our Accommodations</h3> -->
         <ul class="foot">
-          <li><strong>Accommodations</strong></li>
+          <li><strong>Our Accommodations</strong></li>
           <li><a href="" onclick="return false;">Quality Assessment</a></li>
           <li><a href="" onclick="return false;">You have a hotel?</a></li>
         </ul>
 
-        <!-- <h3>Assistance</h3> -->
         <ul class="foot">
           <li><strong>Assistance</strong></li>
           <li><a href="" onclick="return false;">Help Desk</a></li>
