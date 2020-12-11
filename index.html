@@ -26,8 +26,8 @@
               <img class="logo" src="images/logo/reservia@3x.png" alt="Reservia Logo" title="Reservia">
             </a>
           </li>
-          <li class="accom"><a href="#accommodations">Accommodations</a></li>
-          <li class="activ"><a href="#activities">Activities</a></li>
+          <li class="accom focused"><a href="#accommodations" tabindex="1">Accommodations</a></li>
+          <li class="activ focused"><a href="#activities">Activities</a></li>
           <li class="signup"><a href="#"><strong>Sign Up</strong></a></li>
         </ul>
     
@@ -53,9 +53,10 @@
       <section class="filters">
         <!--Filters with mouse-over effects-->
       
+        
         <h2 class="filtertext">Filters</h2>
 
-        <div class="filter-wrapper">
+          <div class="filter-wrapper">
 
           <button class="capsules">
   
@@ -79,6 +80,7 @@
           </button>
   
           <button class="capsules">
+            
             <i class="fas fa-dog fa-2x icon icon-circle"></i>
             <span><strong>Pets allowed</strong></span>
             
@@ -87,7 +89,8 @@
 
       </section>
 
-      <p class="leftpad"><i class="fas fa-info-circle circle"></i> More than 500 accommodations are available in this city</p>
+      <p class="leftpad"><i class="fas fa-info-circle circle"></i>
+      <span>More than 500 accommodations are available in this city</span>
 
     </header>
   
@@ -195,44 +198,74 @@
           <div class="display-wrapper-pop">
           
             <section class="popular-card">
+
               <a href="" onclick="return false;">
                 <img class="pic" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel" title="Morning Sun Hotel">
-                <h3 class="poptext">Morning Sun Hotel</h3>
-                <p class="poptext">Night starting at <strong>128€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                
+                <div class="card-cont">
+
+                  <h3 class="poptext">Morning Sun Hotel</h3>
+                  <p class="poptext">Night starting at <strong>128€</strong></p>
+
+                  <div class="rating">
+                    <i class="fas fa-star poptext"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                </div>
+
               </a>
+
             </section>
           
             <section class="popular-card">
+
               <a href="" onclick="return false;">
                 <img class="pic" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Bed and Breakfast" title="Au cœur de l'eau Bed and Breakfast">
-                <h3 class="poptext">Au cœur de l'eau Bed and Breakfast</h3>
-                <p class="poptext">Night starting at <strong>71€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star greystar"></i>
+                  
+                <div class="card-cont">
+
+                  <h3 class="poptext">Au cœur de l'eau Bed and Breakfast</h3>
+                  <p class="poptext">Night starting at <strong>71€</strong></p>
+
+                  <div class="rating">
+                    <i class="fas fa-star poptext"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star greystar"></i>
+                  </div>
+
+                 </div>
+
               </a>
             </section>
           
             <section class="popular-card">
-              <a class="leftpad" href="" onclick="return false;">
-                <img class="pic" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout blue et Blanc Hotel" title="Tout blue et Blanc Hotel">
-                <!-- <div class="indent"> -->
+
+              <a href="" onclick="return false;">
+                  <img class="pic" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout blue et Blanc Hotel" title="Tout blue et Blanc Hotel">
+                  
+                <div class="card-cont">
+
                   <h3 class="poptext">Tout blue et Blanc Hotel</h3>
                   <p class="poptext">Night starting at <strong>68€</strong></p>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star greystar"></i>
-                <!-- </div> -->
+
+                  <div class="rating">
+                    <i class="fas fa-star poptext"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star greystar"></i>
+                  </div>
+
+                </div>
+
               </a>
+
             </section>
   
           </div>
@@ -246,60 +279,60 @@
         <h2 class="leftpad">Activities in Marseille</h2>
 
         <div class="display-wrapper-act">
-          
-          <section class="activities-card">
-            <a href="" onclick="return false;">
-              <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port" title="Old Port">
-              <!-- <h3>Old Port</h3> -->
-              <figcaption class="figindent">Old Port</figcaption>
-            </a>
-          </section>
+        
+          <div class="tablet">
 
-          <div class="display-wrapper-act-col2">
-
-            <section class="activities-card-col2-1">
+            <section class="activities-card">
               <a href="" onclick="return false;">
-                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues Fort" title="Pomègues Fort">
-                <!-- <h3 class="figindent">Pomègues Fort</h3> -->
-                <figcaption class="figindent">Pomègues Fort</figcaption>
+                <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port" title="Old Port">
+                <figcaption class="figindent">Old Port</figcaption>
               </a>
             </section>
   
-            <section class="activities-card-col2-2">
-              <a href="" onclick="return false;">
-                <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island" title="Frioul Island">
-                <!-- <h3 class="figindent">Frioul Island</h3> -->
-                <figcaption class="figindent">Frioul Island</figcaption>
-              </a>
-            </section>
-
+            <div class="display-wrapper-act-col2">
+  
+              <section class="activities-card-col2-1">
+                <a href="" onclick="return false;">
+                  <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues Fort" title="Pomègues Fort">
+                  <figcaption class="figindent">Pomègues Fort</figcaption>
+                </a>
+              </section>
+    
+              <section class="activities-card-col2-2">
+                <a href="" onclick="return false;">
+                  <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island" title="Frioul Island">
+                  <figcaption class="figindent">Frioul Island</figcaption>
+                </a>
+              </section>
+  
+            </div>
           </div>
 
-          <section class="activities-card">
-            <a href="" onclick="return false;">
-              <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" title="Calanques National Park">
-              <!-- <h3>Calanques National Park</h3> -->
-              <figcaption class="figindent">Calanques National Park</figcaption>
-            </a>
-          </section>
+          <div class="tablet">
 
-          <div class="display-wrapper-act-col4">
-
-            <section class="activities-card-col4-1">
+            <section class="activities-card">
               <a href="" onclick="return false;">
-                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
-                <!-- <h3>Notre-Dame-de-la-Garde</h3> -->
-                <figcaption class="figindent">Notre-Dame-de-la-Garde</figcaption>
+                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" title="Calanques National Park">
+                <figcaption class="figindent">Calanques National Park</figcaption>
               </a>
             </section>
-
-            <section class="activities-card-col4-2">
-              <a href="" onclick="return false;">
-                <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park" title="Longchamp Park">
-                <!-- <h3>Longchamp Park</h3> -->
-                <figcaption class="figindent">Longchamp Park</figcaption>
-              </a>
-            </section>
+  
+            <div class="display-wrapper-act-col4">
+  
+              <section class="activities-card-col4-1">
+                <a href="" onclick="return false;">
+                  <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
+                  <figcaption class="figindent">Notre-Dame-de-la-Garde</figcaption>
+                </a>
+              </section>
+  
+              <section class="activities-card-col4-2">
+                <a href="" onclick="return false;">
+                  <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park" title="Longchamp Park">
+                  <figcaption class="figindent">Longchamp Park</figcaption>
+                </a>
+              </section>
+          </div>
 
           </div>
 

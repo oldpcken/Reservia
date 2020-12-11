@@ -46,6 +46,10 @@ a {
     width: 10%;
     text-align: center;
     padding: 20px 5px 20px 5px;
+    /* border-top: 3px solid #0065fc; */
+}
+
+.accom:active, .activ:active {
     border-top: 3px solid #0065fc;
 }
 
@@ -61,14 +65,25 @@ a {
     text-align: center;
     padding: 20px 5px 20px 5px;
     border-top: 3px solid white;
-    color: #0065fc
 }
+
+.signup a {
+    color: #0065fc;
+}
+
+/* a:link {
+    color: black;
+ }
+
+a:visited {
+    color: #0065fc
+} */
 
 .single {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 1px solid grey;
+    border: 1px solid #f2f2f2;
     color: #0065fc;
     
 }
@@ -77,11 +92,13 @@ a {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 1px solid grey;
+    border: 2px solid #f2f2f2;
     color: white;
-    font-size: 20px;
+    font-size: 1.4em;
     background-color: #0065fc;
 }
+
+/* --- Search Box --- */
 
 .searchbox {
     margin: 20px;
@@ -170,7 +187,6 @@ a {
     width: 47px;
     border-radius: 50%;
     vertical-align: middle;
-    /* align-items: baseline; */
     padding: 19px 0 0 18px;
     margin-left: -1px;
     margin-top: -3px;
@@ -178,11 +194,6 @@ a {
 
 .greystar {
     color: #f2f2f2;
-}
-
-.most {
-    display: flex;
-    justify-content: space-between;
 }
 
 .figindent {
@@ -251,8 +262,8 @@ a {
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 20px;
-    width: 33%;
-    margin: 0 0 0 20px;
+    width: 31%;
+    margin: 5px 0 0 20px;
 }
 
 .display-wrapper-pop {
@@ -260,38 +271,51 @@ a {
     display: flex;
     flex-flow: column;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
+}
+
+.most {
+    display: flex;
+    justify-content: space-between;
 }
 
 .fa-chart-line {
-    padding-top: 15px;
+    padding: 15px 80px 0 0;
 }
 
 .popular-card {
-    height: 175px;
-    width: 85%;
+    width: 81%;
     border-radius: 20px;
     background-color: white;
     padding: 5px;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
-    margin: 15px;
+    margin: 1em;
+}
+
+.popular-card a {
+    display: flex;
+}
+
+.card-cont h3 {
+    margin: 0;
+    height: 40%;
+}
+
+.card-cont p {
+    margin: 0;
+    height: 30%;
 }
 
 .poptext {
-    padding: 0 0 20px 0;
-}
-
-.pic {
-    float: left;
+    padding: 5px 0 0 15px;
+    margin: 10px 0 30px 0;
 }
 
 .popular-card img {
-    width: 40%;
-    height: 100%;
     object-fit: cover;
-    object-position: center 40%;
+    height: 160px;
+    width: 150px;
     border-radius: 20px 0 0 20px;
-    padding: 0 20px 0 0;
 }
 
 /* --- Activities Section --- */
@@ -471,18 +495,77 @@ footer {
 
 
 
+    .filter-wrapper {
+        flex-wrap: wrap;
+    }
 
+    .display-wrapper-accommodations-popular {
+        flex-flow: column;
+    }
 
+    .accommodations {
+        order: 2;
+        width: 95%;
+    }
 
+    .popular {
+        order: 1;
+        width: 95%;
+    }
 
+    .display-wrapper-pop {
+        flex-flow: row;
+    }
+
+    .popular-card a {
+        flex-direction: column;
+    }
+
+    .card-cont h3 {
+        height: 50%;
+    }
     
+    .card-cont p {
+        height: 75%;
+    }
+
+    .popular-card img {
+        /* height: 160px; */
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+   
+    .tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activities-card {
+        width: 85%;
+    }
+
+    .activities-card-col2-1 {
+        width: 400%;
+    }
+
+    .activities-card-col2-2 {
+        width: 400%;
+    }
+
+    .activities-card-col4-1 {
+        width: 400%;
+    }
+
+    .activities-card-col4-2 {
+        width: 400%;
+    }
 
 
     footer {
         flex-wrap: wrap;
         white-space: nowrap;
     }
-}
 }
 
 
@@ -499,10 +582,6 @@ footer {
       flex-wrap: wrap;
       font-size: 1em;
     }
-
-    /* .headr li {
-        background-color: orange;
-    } */
 
     .logo {
         width: 125px;
@@ -565,27 +644,32 @@ footer {
         display: none;
     }
 
+    .filters {
+        flex-direction: column;
+    }
+
     .filtertext {
         display: block;
+
     }
 
     .filter-wrapper {
         flex-wrap: wrap;
     }
 
-    .display-wrapper :nth-child(1) {
+    .filter-wrapper > button:nth-child(1) {
         order: 1;
     }
     
-    .display-wrapper :nth-child(2) {
+    .filter-wrapper > button:nth-child(2) {
         order: 3;
     }
     
-    .display-wrapper :nth-child(3) {
+    .filter-wrapper > button:nth-child(3) {
         order: 2;
     }
     
-    .display-wrapper :nth-child(4) {
+    .filter-wrapper > button:nth-child(4) {
         order: 4;
     }
 
