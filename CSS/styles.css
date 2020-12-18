@@ -55,10 +55,6 @@ a {
     color: #0065fc;
 }
 
-/* .accom:active, .activ:active {
-    border-top: 3px solid #0065fc;
-} */
-
 .activ {
     text-align: right;
     padding: 20px 5px 20px 5px;
@@ -134,7 +130,7 @@ a {
 }
 
 .filtertext {
-    padding: 5px 0 0 20px;
+    padding: 7px 0 0 20px;
     display: inline-block;
 }
 
@@ -149,7 +145,7 @@ a {
     padding: 0 0 0 0;
     height: 4em;
     margin: 8px 1% 18px 2%;
-    font-weight: 600;
+    font-weight: 500;
     border: 3px solid #f2f2f2;
     text-align: left;
     white-space: nowrap;
@@ -157,7 +153,7 @@ a {
 
 .capsules > span {
     padding: 0 20px 0 12px;
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 0;
 }
 
@@ -168,12 +164,12 @@ a {
 .icon-circle {
     background-color: #deebff;
     color: #0065fc;
-    height: 37px;
-    width: 38px;
+    height: 46px;
+    width: 47px;
     font-size: 1.5em;
     border-radius: 50%;
     vertical-align: middle;
-    padding: 14px 0 0 14px;
+    padding: 16px 0 0 16px;
     margin-left: -1px;
     margin-top: -1px;
 }
@@ -523,11 +519,9 @@ footer {
     }
 
     .popular-card img {
-        /* height: 160px; */
         width: 100%;
         border-radius: 20px 20px 0 0;
     }
-
    
     .tablet {
         flex-direction: column;
@@ -566,7 +560,6 @@ footer {
     .activities-card-col4-2 {
         width: 45%;
     } */
-
 
     footer {
         flex-wrap: wrap;
@@ -627,11 +620,7 @@ footer {
     .leftpad {
         padding-left: 15px;
     }
-
-    /* .logo {
-        width: 100%;
-    } */
-
+    
     .input {
         padding: 12px 0 12px 2px;
     }
