@@ -328,7 +328,6 @@ a {
     display: flex;
     width: 100%;
     padding: 10px 0;
-    /* justify-content: center; */
 }
 
 .tablet {
@@ -338,7 +337,6 @@ a {
 .activities-card {
     box-sizing: border-box;
     display: flex;
-    /* flex-flow: row; */
     width: 22.75%;
     border-radius: 20px;
     background-color: white;
@@ -371,13 +369,10 @@ a {
 .activities-card-col2-1 {
     box-sizing: border-box;
     display: flex;
-    /* flex-flow: row; */
-    /* width: 93%; */
     border-radius: 20px;
     background-color: white;
     padding: 0;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
-    /* margin: 0 20px; */
     font-weight: 800;
     line-height: 1.8em;
 }
@@ -394,13 +389,10 @@ a {
 .activities-card-col2-2 {
     box-sizing: border-box;
     display: flex;
-    /* flex-flow: row; */
-    /* width: 93%; */
     border-radius: 20px;
     background-color: white;
     padding: 0;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
-    /* margin: 20px; */
     font-weight: 800;
     line-height: 1.8em;
 }
@@ -427,13 +419,10 @@ a {
 .activities-card-col4-1 {
     box-sizing: border-box;
     display: flex;
-    /* flex-flow: row; */
-    /* width: 93%; */
     border-radius: 20px;
     background-color: white;
     padding: 0;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
-    /* margin: 20px; */
     font-weight: 800;
     line-height: 1.8em;
 }
@@ -450,13 +439,10 @@ a {
 .activities-card-col4-2 {
     box-sizing: border-box;
     display: flex;
-    /* flex-flow: row; */
-    /* width: 93%; */
     border-radius: 20px;
     background-color: white;
     padding: 0;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
-    /* margin: 20px; */
     font-weight: 800;
     line-height: 1.8em;
 }
@@ -508,7 +494,6 @@ footer {
     .accommodations {
         order: 2;
         width: 93%;
-        /* padding: 5px; */
     }
 
     .accommodations-card {
@@ -565,8 +550,6 @@ footer {
     .display-wrapper-act-col4 {
         width: 45%;
     }
-
-
 
     /* .activities-card-col2-1 {
         width: 45%;
