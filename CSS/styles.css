@@ -14,6 +14,7 @@ p {
 a {
     text-decoration: none;
     color: black;
+    width: 100%;
 }
 
 .logo {
@@ -130,7 +131,7 @@ a {
 }
 
 .filtertext {
-    padding: 7px 0 0 20px;
+    padding: 10px 0 0 20px;
     display: inline-block;
 }
 
@@ -164,14 +165,14 @@ a {
 .icon-circle {
     background-color: #deebff;
     color: #0065fc;
-    height: 46px;
-    width: 47px;
+    height: 45px;
+    width: 46px;
     font-size: 1.5em;
     border-radius: 50%;
     vertical-align: middle;
-    padding: 16px 0 0 16px;
-    margin-left: -1px;
-    margin-top: -1px;
+    padding: 18px 0 0 19px;
+    margin-left: -2px;
+    margin-top: -2px;
 }
 
 /* -- info icon in circle -- */
@@ -230,10 +231,11 @@ a {
     border-radius: 20px;
     background-color: white;
     padding: 5px;
-    width: 30%;
+    width: 28%;
+    font-size: 14px;
     line-height: .25;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.14);
-    margin: 10px 5px;
+    margin: 15px 20px 20px 10px;
 }
 
 .indent-text {
@@ -242,7 +244,7 @@ a {
 
 .accommodations-card img {
     width: 100%;
-    height: 125px;
+    height: 115px;
     object-fit: cover;
     object-position: center 50%;
     border-radius: 20px 20px 0 0;
@@ -265,6 +267,7 @@ a {
     flex-flow: column;
     padding: 10px 5px;
     margin: 0 5px 20px 5px;
+    /* justify-content: center; */
 }
 
 .most {
@@ -273,16 +276,17 @@ a {
 }
 
 .fa-chart-line {
-    padding: 15px 80px 0 0;
+    padding: 15px 30px 0 30px;
 }
 
 .popular-card {
     width: 91%;
     border-radius: 20px;
     background-color: white;
+    font-size: 14px;
     padding: 5px;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
-    margin: 12px 0;
+    margin: 15px 0 15px 10px;
 }
 
 .popular-card a {
@@ -340,7 +344,7 @@ a {
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
     margin: 20px;
     font-weight: 800;
-    line-height: 1.8em;
+    line-height: 2em;
 }
 
 .activities-card img {
@@ -370,7 +374,7 @@ a {
     padding: 0;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
     font-weight: 800;
-    line-height: 1.8em;
+    line-height: 2em;
 }
 
 .activities-card-col2-1 img {
@@ -390,7 +394,7 @@ a {
     padding: 0;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
     font-weight: 800;
-    line-height: 1.8em;
+    line-height: 2em;
 }
 
 .activities-card-col2-2 img {
@@ -420,7 +424,7 @@ a {
     padding: 0;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
     font-weight: 800;
-    line-height: 1.8em;
+    line-height: 2em;
 }
 
 .activities-card-col4-1 img {
@@ -440,7 +444,7 @@ a {
     padding: 0;
     box-shadow: 0 8px 12px rgba(0,0,0,0.07), 0 8px 12px rgba(0,0,0,0.12);
     font-weight: 800;
-    line-height: 1.8em;
+    line-height: 2em;
 }
 
 .activities-card-col4-2 img {
@@ -487,6 +491,10 @@ footer {
         flex-flow: column;
     }
 
+    /* .display-wrapper-accommodations {
+        justify-content: center;
+    } */
+
     .accommodations {
         order: 2;
         width: 93%;
@@ -494,12 +502,14 @@ footer {
 
     .accommodations-card {
         width: 40%;
+        margin-left: 25px;
     }
 
     .popular {
         order: 1;
         width: 98%;
         padding: 0;
+        margin: 0;
     }
 
     .display-wrapper-pop {
@@ -510,12 +520,18 @@ footer {
         flex-direction: column;
     }
 
+    .popular-card {
+        margin: 0 10px 0 0;
+    }
+
     .card-cont h3 {
-        height: 50%;
+        height: 60%;
+        /* line-height: 1em; */
     }
     
     .card-cont p {
-        height: 75%;
+        height: 95%;
+        /* line-height: 1em; */
     }
 
     .popular-card img {
@@ -528,7 +544,7 @@ footer {
     }
 
     .activities-card {
-        width: 45%;
+        width: 44%;
     }
 
     .display-wrapper-act {
@@ -537,12 +553,12 @@ footer {
     }
 
     .display-wrapper-act-col2 {
-        width: 45%;
+        width: 44%;
     }
 
 
     .display-wrapper-act-col4 {
-        width: 45%;
+        width: 44%;
     }
 
     /* .activities-card-col2-1 {
@@ -626,9 +642,11 @@ footer {
     }
 
     .searchbutton {
-        border-radius: 20px;
-        margin-left: -25px;
-        height: 75px;
+        border-radius: 15px;
+        margin-left: -10px;
+        height: 45px;
+        width: 43px;
+        padding: 1px 11px;
     }
 
     .btnicon {
@@ -673,6 +691,8 @@ footer {
         padding: 0;
     }
     
+    /* -------Accommodations Section------ */
+
     .accommodations {
         order: 2;
         width: 100%;
@@ -683,13 +703,20 @@ footer {
 
     .display-wrapper-acc {
         flex-flow: column;
-        width: 310%;
+        width: 208%;
         padding: 0;
     }
 
     .accommodations-card {
-        padding: 0;
-        margin: 10px;
+        padding: 5px 5px 0 5px;
+        margin: 15px 15px 15px 25px;
+        justify-content: center;
+    }
+
+    /* -------Most Popular Section------ */
+
+    .display-wrapper-pop {
+        flex-flow: column;
     }
 
     .popular {
@@ -701,10 +728,30 @@ footer {
 
      .popular-card {
         padding: 0;
-        height: 190px;
-        margin-top: 0;
-        width: 100%;
+        /* height: 190px; */
+        margin: 10px 5px;
+        width: 94%;
     }
+
+    .popular-card a {
+        flex-direction: row;
+    }
+
+    .card-cont h3 {
+        height: 35%;
+    }
+    
+    .card-cont p {
+        height: 30%;
+    }
+
+    .popular-card img {
+        height: 150px;
+        width: 40%;
+        border-radius: 20px 0 0 20px;
+    }
+
+     /* -------Activities Section------ */
 
     .activities {
         padding: 10px;    
@@ -719,7 +766,7 @@ footer {
     .activities-card {
         height: 200px;
         width: 93%;
-        margin: 10px 0 10px 10px;
+        margin: 20px 0 10px 10px;
     }
 
     .activities-card img {
@@ -733,7 +780,7 @@ footer {
 
     .activities-card-col2-1 {
         height: 200px;
-        width: 375%;
+        width: 208%;
         margin: 10px;
     }
 
@@ -743,7 +790,7 @@ footer {
 
     .activities-card-col2-2 {
         height: 200px;
-        width: 375%;
+        width: 208%;
         margin: 10px;
     }
 
@@ -758,7 +805,7 @@ footer {
 
     .activities-card-col4-1 {
         height: 200px;
-        width: 375%;
+        width: 208%;
         margin: 10px;
     }
 
@@ -768,13 +815,15 @@ footer {
 
     .activities-card-col4-2 {
         height: 200px;
-        width: 375%;
+        width: 208%;
         margin: 10px;
     }
 
     .activities-card-col4-2 img {
         height: 73%;
     }
+
+    /* -------Footer Section------ */
 
     footer {
         flex-flow: column;
