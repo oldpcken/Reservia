@@ -482,22 +482,24 @@ footer {
         width: 25%;
     }
 
-
     .filter-wrapper {
         flex-wrap: wrap;
     }
 
     .display-wrapper-accommodations-popular {
         flex-flow: column;
+        margin-left: 0;
     }
 
-    /* .display-wrapper-accommodations {
-        justify-content: center;
-    } */
+    .display-wrapper-accommodations {
+        margin-left: 0;
+        padding-left: 0;
+    }
 
     .accommodations {
         order: 2;
         width: 93%;
+        margin: 15px 0 15px 0;
     }
 
     .accommodations-card {
@@ -521,17 +523,23 @@ footer {
     }
 
     .popular-card {
-        margin: 0 10px 0 0;
+        margin: 0 12px 0 0;
     }
 
     .card-cont h3 {
-        height: 60%;
-        /* line-height: 1em; */
+        height: 25px;
     }
     
     .card-cont p {
-        height: 95%;
-        /* line-height: 1em; */
+        height: 15px;
+    }
+
+    .poptext {
+        padding: 10px 0 0 15px;
+    }    
+
+    .rating {
+        height: 35px;
     }
 
     .popular-card img {
@@ -556,26 +564,9 @@ footer {
         width: 44%;
     }
 
-
     .display-wrapper-act-col4 {
         width: 44%;
     }
-
-    /* .activities-card-col2-1 {
-        width: 45%;
-    }
-
-    .activities-card-col2-2 {
-        width: 45%;
-    }
-
-    .activities-card-col4-1 {
-        width: 45%;
-    }
-
-    .activities-card-col4-2 {
-        width: 45%;
-    } */
 
     footer {
         flex-wrap: wrap;
@@ -728,7 +719,6 @@ footer {
 
      .popular-card {
         padding: 0;
-        /* height: 190px; */
         margin: 10px 5px;
         width: 94%;
     }
@@ -742,8 +732,12 @@ footer {
     }
     
     .card-cont p {
-        height: 30%;
+        height: 20%;
     }
+
+    /* .rating {
+        height: 20px;
+    } */
 
     .popular-card img {
         height: 150px;
@@ -780,7 +774,7 @@ footer {
 
     .activities-card-col2-1 {
         height: 200px;
-        width: 208%;
+        width: 209%;
         margin: 10px;
     }
 
@@ -790,7 +784,7 @@ footer {
 
     .activities-card-col2-2 {
         height: 200px;
-        width: 208%;
+        width: 209%;
         margin: 10px;
     }
 
@@ -805,7 +799,7 @@ footer {
 
     .activities-card-col4-1 {
         height: 200px;
-        width: 208%;
+        width: 209%;
         margin: 10px;
     }
 
@@ -815,7 +809,7 @@ footer {
 
     .activities-card-col4-2 {
         height: 200px;
-        width: 208%;
+        width: 209%;
         margin: 10px;
     }
 
