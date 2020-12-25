@@ -651,9 +651,9 @@ footer {
 
     .searchbutton {
         border-radius: 15px;
-        margin-left: -15px;
-        height: 45px;
-        width: 43px;
+        margin-left: -20px;
+        height: 47px;
+        width: 45px;
         padding: 1px 11px;
     }
 
@@ -718,7 +718,7 @@ footer {
     }
 
     .accommodations-card {
-        padding: 5px 5px 0 5px;
+        padding: 5px;
         margin: 15px 15px 15px 25px;
         justify-content: center;
     }
